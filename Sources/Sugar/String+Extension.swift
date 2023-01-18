@@ -8,6 +8,8 @@
 import Foundation
 
 public extension String {
+  static let carriageReturn = "\r"
+  
   init?(htmlEncodedString: String) {
     guard let data = htmlEncodedString.data(using: .utf8) else { return nil }
     

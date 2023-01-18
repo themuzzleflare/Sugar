@@ -1,3 +1,3 @@
 # Sugar
 
-A description of this package.
+A collection of useful extensions for the Swift programming language.

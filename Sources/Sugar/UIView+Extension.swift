@@ -92,4 +92,11 @@ public extension Array where Element: UIView {
       print(type(of: view))
     }
   }
+  
+  /// Unlinks the views from their superviews and their windows, and removes them from the responder chain.
+  func removeFromSuperview() {
+    for view in self {
+      view.removeFromSuperview()
+    }
+  }
 }

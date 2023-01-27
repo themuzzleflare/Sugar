@@ -22,6 +22,8 @@ public extension UILabel {
   }
   
   /// The shadow colour of the text.
+  ///
+  /// The default value for this property is `nil`, which indicates that the text has no shadow. In addition to this property, you may also want to change the default shadow offset by modifying the `shadowOffset` property. A label draws its text shadows with the specified offset and colour and no blurring.
   var shadowColour: UIColour? {
     get {
       return self.shadowColor

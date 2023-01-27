@@ -17,6 +17,6 @@ public extension Array where Element == CLLocationDegrees {
 
 public extension Array where Element == [CLLocationDegrees] {
   var coordinates: [CLLocationCoordinate2D] {
-    return self.compactMap {$0.coordinate}
+    return self.compactMap({$0.coordinate})
   }
 }

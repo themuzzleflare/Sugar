@@ -9,4 +9,9 @@ import Foundation
 
 public extension CharacterSet {
   static let carriageReturn = CharacterSet(charactersIn: .carriageReturn)
+  
+  /// Returns a character set containing the characters in Unicode General Category Lt.
+  static var capitalisedLetters: CharacterSet {
+    return self.capitalizedLetters
+  }
 }

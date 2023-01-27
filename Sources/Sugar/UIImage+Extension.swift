@@ -27,7 +27,7 @@ public extension UIImage {
     }
   }
   
-  func rotate(radians: CGFloat) -> UIImage {
+  func rotate(radians: Double) -> UIImage {
     let transform = CGAffineTransform(rotationAngle: radians)
     
     let rotatedSize = CGRect(origin: .zero, size: self.size)

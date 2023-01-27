@@ -8,8 +8,6 @@
 import Foundation
 
 public extension String {
-  static let carriageReturn = "\r"
-  
   init?(htmlEncodedString: String) {
     guard let data = htmlEncodedString.data(using: .utf8) else { return nil }
     
@@ -21,6 +19,8 @@ public extension String {
                                                          documentAttributes: nil) else { return nil }
     self.init(attributedString.string)
   }
+  
+  static let carriageReturn = "\r"
   
   func replacingCharacterEntities() -> String {
     func unicodeScalar(for numericCharacterEntity: String) -> Unicode.Scalar? {

@@ -13,3 +13,9 @@ extension CLLocationCoordinate2D: Equatable {
     return lhs.latitude == rhs.latitude && lhs.longitude == rhs.longitude
   }
 }
+
+public extension CLLocationCoordinate2D {
+  var location: CLLocation {
+    return .init(latitude: latitude, longitude: longitude)
+  }
+}

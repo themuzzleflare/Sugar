@@ -10,8 +10,8 @@ import UIKit
 
 @available(iOS 13.0, *)
 public extension UIImage.Configuration {
-  static func symbolScale(_ scale: UIImage.SymbolScale) -> UIImage.SymbolConfiguration {
-    return .scale(scale)
+  static func scale(_ scale: UIImage.SymbolScale) -> UIImage.SymbolConfiguration {
+    return .init(scale: scale)
   }
   
   static func combining<T: UIImage.Configuration>(_ configurations: [T]) -> T {
@@ -23,16 +23,16 @@ public extension UIImage.Configuration {
 
 @available(iOS 15.0, *)
 public extension UIImage.Configuration {
-  static func symbolHierarchical(_ colour: UIColour) -> UIImage.SymbolConfiguration {
-    return .hierarchical(colour)
+  static func hierarchical(_ colour: UIColour) -> UIImage.SymbolConfiguration {
+    return .init(hierarchicalColor: colour)
   }
   
-  static func symbolPalette(_ colours: [UIColour]) -> UIImage.SymbolConfiguration {
-    return .palette(colours)
+  static func palette(_ colours: UIColour...) -> UIImage.SymbolConfiguration {
+    return self.palette(colours)
   }
   
-  static func symbolPalette(_ colours: UIColour...) -> UIImage.SymbolConfiguration {
-    return self.symbolPalette(colours)
+  static func palette(_ colours: [UIColour]) -> UIImage.SymbolConfiguration {
+    return .init(paletteColors: colours)
   }
 }
 

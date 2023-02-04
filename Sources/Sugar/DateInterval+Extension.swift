@@ -8,7 +8,11 @@
 import Foundation
 
 public extension DateInterval {
-  func formatted(using formatter: DateIntervalFormatter) -> String? {
+  var dateRange: Range<Date> {
+    return start..<end
+  }
+  
+  func formatted(_ formatter: DateIntervalFormatter) -> String? {
     return formatter.string(from: self)
   }
 }

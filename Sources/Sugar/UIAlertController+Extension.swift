@@ -16,9 +16,9 @@ public extension UIAlertController {
   }
   
   /// Attaches one or more action objects to the alert or action sheet.
-  /// - Parameter action: The action objects to display as part of the alert. Actions are displayed as buttons in the alert. The action object provides the button text and the action to be performed when that button is tapped.
-  func addAction(_ action: UIAlertAction...) {
-    self.addActions(action)
+  /// - Parameter actions: The action objects to display as part of the alert. Actions are displayed as buttons in the alert. The action object provides the button text and the action to be performed when that button is tapped.
+  func addActions(_ actions: UIAlertAction...) {
+    self.addActions(actions)
   }
   
   /// Attaches action objects to the alert or action sheet.

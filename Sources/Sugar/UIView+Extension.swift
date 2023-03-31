@@ -11,8 +11,8 @@ import UIKit
 public extension UIView {
   /// Adds one or more views to the end of the receiver’s list of subviews.
   /// - Parameter views: The views to be added. After being added, these views appear on top of any other subviews.
-  func addSubview(_ view: UIView...) {
-    self.addSubviews(view)
+  func addSubviews(_ views: UIView...) {
+    self.addSubviews(views)
   }
   
   

@@ -23,8 +23,12 @@ public extension MKCoordinateRegion {
   ///   - latitudinalMeters: The north-to-south span of the region (measured in metres) specified as the distance from the centre point to the bounds along the north-to-south axis.
   ///   - longitudinalMeters: The east-to-west span of the region (measured in metres) specified as the distance from the centre point to the bounds along the east-to-west axis.
   /// - Returns: A region with the specified values.
-  init(centre centreCoordinate: CLLocationCoordinate2D, latitudinalMeters: CLLocationDistance, longitudinalMeters: CLLocationDistance) {
-    self.init(center: centreCoordinate, latitudinalMeters: latitudinalMeters, longitudinalMeters: longitudinalMeters)
+  init(centre centreCoordinate: CLLocationCoordinate2D,
+       latitudinalMeters: CLLocationDistance,
+       longitudinalMeters: CLLocationDistance) {
+    self.init(center: centreCoordinate,
+              latitudinalMeters: latitudinalMeters,
+              longitudinalMeters: longitudinalMeters)
   }
   
   /// The centre point of the region.

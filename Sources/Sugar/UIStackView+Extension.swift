@@ -15,8 +15,8 @@ public extension UIStackView {
   
   /// Adds one or more views to the end of the arranged subviews array.
   /// - Parameter views: The views to add to the array of views arranged by the stack.
-  func addArrangedSubview(_ view: UIView...) {
-    self.addArrangedSubviews(view)
+  func addArrangedSubviews(_ views: UIView...) {
+    self.addArrangedSubviews(views)
   }
   
   /// Adds views to the end of the arranged subviews array.
@@ -29,8 +29,8 @@ public extension UIStackView {
   
   /// Removes the provided view/views from the stack’s array of arranged subviews.
   /// - Parameter views: The view/views to be removed from the array of views arranged by the stack.
-  func removeArrangedSubview(_ view: UIView...) {
-    self.removeArrangedSubviews(view)
+  func removeArrangedSubviews(_ views: UIView...) {
+    self.removeArrangedSubviews(views)
   }
   
   /// Removes the provided views from the stack’s array of arranged subviews.

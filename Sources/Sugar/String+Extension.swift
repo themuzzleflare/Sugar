@@ -26,4 +26,10 @@ public extension String {
   }
   
   static let carriageReturn = "\r"
+  
+  func isPalindrome() -> Bool {
+    let lowercased = self.lowercased()
+    let reversed = String(lowercased.reversed())
+    return lowercased == reversed
+  }
 }

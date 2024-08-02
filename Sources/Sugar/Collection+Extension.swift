@@ -1,6 +1,6 @@
 //
 //  Collection+Extension.swift
-//  
+//
 //
 //  Created by Paul Tavitian on 1/2/2023.
 //
